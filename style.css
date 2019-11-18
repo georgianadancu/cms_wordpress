@@ -1,0 +1,147 @@
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+FONTS
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+@import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+BODY STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffe4d5;
+  color: white;
+ font-family: "Montserrat", sans-serif;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+HEADER STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.header {
+  background-color: darkgoldenrod;
+    color: white;
+  padding: 120px;
+  text-align: center;
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: white;
+    z-index: 999;
+    border-radius: 0 2px 2px 0;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    display: flex;
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+LAYOUT - RESPONSIVE
++*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+5 COLUMNS TURNING INTO 5 ROWS
+if device is smaller than 600px
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+NAVIGATION MENU RESPONSIVE
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+when device turns from desktop to mobile
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+@media screen and (max-width: 600px) {
+    .button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+    .topnav {
+        flex-direction: column;
+    }
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.content {
+  padding: 20px 30px;
+  background-color: #f1f1f1;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.bigbox {
+  background-color: lightgray;
+  padding: 10vw;
+  text-align: center;
+  color: black;
+}
+
+.categories {
+    background-color: inherit;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.maincats {
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
